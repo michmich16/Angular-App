@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+nav .menu li {
+  margin: 0 3vw;
+  list-style: none;
+}
+nav .menu li a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=navbar.component.css.map */

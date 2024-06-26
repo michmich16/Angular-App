@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 42px;
+}
+.logo h1 a {
+  text-decoration: none;
+}/*# sourceMappingURL=header.component.css.map */
