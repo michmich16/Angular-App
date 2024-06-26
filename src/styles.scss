@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+
+html, body {
+    height: 100%;
     margin: 0;
     background-color: #333;
     color: white;
-}
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  main {
+    flex: 1; /* This will push the footer to the bottom */
+  }
+

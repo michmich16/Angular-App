@@ -7,26 +7,39 @@ $card-bg-color: #fff;
 $card-text-color: #333;
 $card-title-color: #007bff;
 
-.card {
-  width: $card-width;
-  margin: $card-margin auto;
-  padding: $card-padding;
-  text-align: center;
-  border-radius: $card-border-radius;
-  box-shadow: $card-box-shadow;
-  background-color: $card-bg-color;
-  color: $card-text-color;
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .card {
+    width: $card-width;
+    margin: $card-margin auto;
+    padding: $card-padding;
+    text-align: center;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+    background-color: $card-bg-color;
+    color: $card-text-color;
 
-  &-img-top {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: $card-border-radius;
-    border-top-right-radius: $card-border-radius;
-  }
-
-  &-body {
-    .card-title {
-      color: $card-title-color;
+    &-img-top {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: $card-border-radius;
+      border-top-right-radius: $card-border-radius;
     }
+
+    &-body {
+      .card-title {
+        color: $card-title-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
   }
 }

@@ -1,8 +1,13 @@
-<div class="card" *ngIf="dogImageUrl">
-    <img [src]="dogImageUrl" class="card-img-top" alt="Random Dog">
-    <div class="card-body">
-      <h5 class="card-title">Random Dog Image</h5>
-      <p class="card-text">Here is a random dog image fetched from the Dog API.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let imageUrl of dogImageUrls">
+      <div class="card mb-4">
+        <img [src]="imageUrl" class="card-img-top" alt="Random Dog">
+        <div class="card-body">
+          <h5 class="card-title">Random Dog Image</h5>
+          <p class="card-text">Here is a random dog image fetched from the Dog API.</p>
+        </div>
+      </div>
     </div>
   </div>
-  
+</div>

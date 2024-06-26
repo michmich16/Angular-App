@@ -1,4 +1,8 @@
-.card {
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.row .card {
   width: 18rem;
   margin: 1rem auto;
   padding: 1rem;
@@ -8,12 +12,21 @@
   background-color: #fff;
   color: #333;
 }
-.card-img-top {
+.row .card-img-top {
   width: 100%;
   height: auto;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
-.card-body .card-title {
+.row .card-body .card-title {
   color: #007bff;
+}
+
+@media only screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=content.component.css.map */

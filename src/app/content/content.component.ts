@@ -7,18 +7,18 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-  dogImageUrl: string = '';
+  dogImageUrls: string[] = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.fetchDogImage();
+    this.fetchDogImages();
   }
 
-  fetchDogImage(): void {
-    this.http.get<any>('https://dog.ceo/api/breeds/image/random')
+  fetchDogImages(): void {
+    this.http.get<any>('https://dog.ceo/api/breeds/image/random/6')
       .subscribe(response => {
-        this.dogImageUrl = response.message;
+        this.dogImageUrls = response.message;
       });
   }
 }

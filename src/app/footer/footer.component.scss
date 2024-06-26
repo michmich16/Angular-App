@@ -1,0 +1,55 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: black;
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        li {
+            list-style: none;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .soMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                padding: 20px;
+                font-size: 35px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+
+            }
+        }
+    }
+
+    }
+
+
+
+    @media only screen and (max-width: 900px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
