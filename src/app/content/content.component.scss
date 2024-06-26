@@ -1,0 +1,32 @@
+$card-width: 18rem;
+$card-margin: 1rem;
+$card-padding: 1rem;
+$card-border-radius: 0.25rem;
+$card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$card-bg-color: #fff;
+$card-text-color: #333;
+$card-title-color: #007bff;
+
+.card {
+  width: $card-width;
+  margin: $card-margin auto;
+  padding: $card-padding;
+  text-align: center;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  background-color: $card-bg-color;
+  color: $card-text-color;
+
+  &-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: $card-border-radius;
+    border-top-right-radius: $card-border-radius;
+  }
+
+  &-body {
+    .card-title {
+      color: $card-title-color;
+    }
+  }
+}

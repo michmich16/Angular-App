@@ -1,0 +1,19 @@
+.card {
+  width: 18rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.card-body .card-title {
+  color: #007bff;
+}/*# sourceMappingURL=content.component.css.map */
