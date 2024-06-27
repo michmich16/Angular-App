@@ -1,4 +1,3 @@
-# Github Page for this
 https://michmich16.github.io/Angular-App/
 
 
