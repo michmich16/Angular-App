@@ -15,6 +15,8 @@ export class ContentComponent implements OnInit {
     this.fetchDogImages();
   }
 
+  // fetch hunde billede fra https://dog.ceo/api/breeds/image/random/
+
   fetchDogImages(): void {
     this.http.get<any>('https://dog.ceo/api/breeds/image/random/6')
       .subscribe(response => {
